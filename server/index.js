@@ -6,8 +6,8 @@ const massive = require("massive");
 const passport = require("passport");
 const Auth0Strategy = require("passport-auth0");
 
-const { dbUser, database } = require("../config").massive;
-const { secret } = require("../config").session;
+const { dbUser, database } = require("./config");
+const { secret } = require("./config").session;
 const { domain, clientID, clientSecret } = require("../config.js").auth0;
 
 const port = 3001;
